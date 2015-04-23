@@ -22,7 +22,7 @@ public class MainActivity extends Activity implements AppCompatCallback {
     public void onSupportActionModeFinished(ActionMode mode) {
     }
 
-    AppCompatDelegate delegate;
+    private AppCompatDelegate delegate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

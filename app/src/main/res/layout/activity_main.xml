@@ -6,9 +6,9 @@
     <android.support.v7.widget.Toolbar
 
         android:id="@+id/my_awesome_toolbar"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:layout_width="match_parent"
-        android:minHeight="56dp"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
         android:background="?attr/colorPrimary"
 
         />
