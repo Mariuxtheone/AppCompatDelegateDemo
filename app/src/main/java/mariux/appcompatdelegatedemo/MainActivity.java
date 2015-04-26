@@ -26,10 +26,14 @@ public class MainActivity extends Activity implements AppCompatCallback {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
         //let's create the delegate, passing the activity at both arguments
         delegate = AppCompatDelegate.create(this, this);
+
+        //the installViewFactory method replaces the default widgets
+        //with the AppCompat-tinted versions
+        delegate.installViewFactory();
+
+        super.onCreate(savedInstanceState);
 
         //we need to call the onCreate() of the AppCompatDelegate
         delegate.onCreate(savedInstanceState);
